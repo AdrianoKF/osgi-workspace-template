@@ -1,0 +1,27 @@
+Bundle-Version: 0.0.0.${tstamp}
+-buildpath:  \
+	osgi.core;version=5.0,\
+	osgi.cmpn;version=5.0,\
+	${junit},\
+	org.apache.felix.dependencymanager,\
+	org.amdatu.testing.configurator;version=3.0
+	
+
+-runfw: org.apache.felix.framework;version='[4.4.1,4.4.1]'
+-runee: JavaSE-1.8
+javac.source=1.8
+javac.target=1.8
+-dsannotations:  \
+	*
+-runrequires:  \
+	osgi.identity;filter:='(&(osgi.identity=org.amdatu.testing.configurator)(version=3.0.0))',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.scr)'
+-runbundles:  \
+	org.amdatu.testing.configurator;version='[3.0.0,3.0.1)',\
+	org.apache.felix.configadmin;version='[1.8.0,1.8.1)',\
+	org.apache.felix.dependencymanager;version='[3.2.0,3.2.1)',\
+	org.apache.felix.scr;version='[1.8.2,1.8.3)',\
+	osgi.enterprise;version='[4.2.0,4.2.1)',\
+	osgi.residential;version='[4.3.0,4.3.1)'
+Export-Package:  \
+	test.integration

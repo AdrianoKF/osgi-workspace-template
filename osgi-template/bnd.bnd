@@ -1,0 +1,16 @@
+Bundle-Version: 0.0.0.${tstamp}
+-buildpath:  \
+	osgi.core;version=5.0,\
+	osgi.cmpn;version=5.0,\
+	${junit}
+	
+Bundle-Activator: example.Activator
+Private-Package:  \
+	example
+
+-runfw: org.apache.felix.framework;version='[4.4.1,4.4.1]'
+-runee: JavaSE-1.8
+javac.source=1.8
+javac.target=1.8
+-dsannotations:  \
+	*
