@@ -6,7 +6,6 @@
 -runrequires:  \
 	osgi.identity;filter:='(osgi.identity=osgi-template)',\
 	osgi.identity;filter:='(&(osgi.identity=org.apache.felix.gogo.command)(version>=0.14.0))',\
-	osgi.identity;filter:='(&(osgi.identity=org.apache.felix.gogo.runtime)(version>=0.12.1))',\
 	osgi.identity;filter:='(&(osgi.identity=org.apache.felix.gogo.shell)(version>=0.10.0))'
 -runbundles:  \
 	org.apache.felix.gogo.command;version='[0.14.0,0.14.1)',\
