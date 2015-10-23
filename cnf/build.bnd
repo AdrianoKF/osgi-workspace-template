@@ -42,7 +42,7 @@
 
 
 ## Properties from ext/*.bnd can be referenced in order to extend them. For
-## example, to add one additional plugin to the list defined in
+## example.api, to add one additional plugin to the list defined in
 ## ext/repositories.bnd:
 # -plugin: ${ext.repositories.-plugin}, org.example.MyPlugin
 
