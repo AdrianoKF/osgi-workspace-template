@@ -3,20 +3,24 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'org.standardout:bnd-platform:1.2.0'
+        classpath 'org.standardout:bnd-platform:1.3.0'
     }
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.8'
+    gradleVersion = '2.11'
 }
 
 apply plugin: 'org.standardout.bnd-platform'
 
 defaultTasks 'clean', 'bundles'
 
+repositories {
+    jcenter()
+}
+
 /* Add Maven dependencies to be converted to OSGi bundles here */
 dependencies {
-    platform 'com.google.guava:guava:18.0'
-    platform 'org.mockito:mockito-core:2.0.8-beta'
+    platform 'com.google.guava:guava:19.0'
+    platform 'org.mockito:mockito-core:2.0.41-beta'
 }

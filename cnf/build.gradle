@@ -15,10 +15,6 @@ buildscript {
   }
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.11'
-}
-
 /* Initialize the bnd workspace */
 Workspace.setDriver(Constants.BNDDRIVER_GRADLE)
 Workspace.addGestalt(Constants.GESTALT_BATCH, null)
